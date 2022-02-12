@@ -1,0 +1,261 @@
+<!--Definindo o tipo do documento como html-->
+<!DOCTYPE html>
+<!--Definindo o idioma para português do Brasil-->
+<html lang="pt-br">
+
+<head>
+    <!--Definindo o alfabeto utilizado, para não ter problemas com acentos-->
+    <meta charset="utf-8">
+    <!--Definindo a área que a página vai ocupar no dispositivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--O nome que irá aparecer na aba da página-->
+    <title>Radiant - Arsenal</title>
+    <!--Incluindo os links de acesso ao css, javascript e fontes utilizadas-->
+    <script src="radiant.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@470;337&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+</head>
+<html>
+<header><br>
+    <!--Incluindo o nome e logo do site-->
+    <a href="home.html">
+        <h1>Radiant</h1>
+    </a>
+    <img height="2%" width="2%" src="images/Logo.png" alt="Radiant logo">
+</header>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <!--Criando o menu com links para cada página-->
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="agentes.html">AGENTES</a></li>
+            <li><a href="mapas.html">MAPAS</a></li>
+            <li><a href="arsenal.html">ARSENAL</a></li>
+            <li><a href="noticias.html">NOTÍCIAS</a></li>
+            <li><a href="forum.html">FÓRUM</a></li>
+            <li><a href="revista.html">REVISTA</a></li>
+        </ul>
+    </nav>
+    <br><br>
+    <hr><br>
+    <!--Criando o link na imagem e no texto para acessar cada um dos itens especificamente.
+    Para as armas tem também uma tabela com o dano causado em partes determinadas do corpo e o custo da arma
+    As imagens estão com um efeito para quando o mouse passar por cima aparecer outra image, mesma coisa quando tira o mouse.-->
+    <a href="melees.html">
+        <p>Faca, Escudo leve e Escudo pesado.</p><br>
+        <img class="pgarsenal" src="images/SHIELDS.png" alt="arsenal" onmouseover="this.src='images/1melees.jpeg'" onmouseout="this.src='images/SHIELDS.png'" /></a>
+
+    <br><br><br>
+    <hr><br>
+
+    <a href="sidearms.html">
+        <p><strong>Pistolas:</strong> Classic, Shorty, Frenzy, Ghost, Sheriff.</p><br>
+        <img class="pgarsenal" src="images/sidearms.png" alt="arsenal" onmouseover="this.src='images/2sidearms.jpeg'" onmouseout="this.src='images/sidearms.png'" /></a>
+    <table border="0px" cellspacing="15" ID="alter">
+        <tr class="dif">
+            <td>Arma</td>
+            <td>Custo</td>
+            <td>Dano Cabeça</td>
+            <td>Dano Corpo</td>
+            <td>Dano Pernas</td>
+        </tr>
+        <tr>
+            <td>Classic</td>
+            <td>Grátis</td>
+            <td>78/66</td>
+            <td>26/22</td>
+            <td>22/18</td>
+        </tr>
+        <tr>
+            <td>Shorty</td>
+            <td>200</td>
+            <td>24/16/7</td>
+            <td>8/12/3</td>
+            <td>6/10/2</td>
+        </tr>
+        <tr>
+            <td>Frenzy</td>
+            <td>500</td>
+            <td>78/63</td>
+            <td>26/21</td>
+            <td>22/17</td>
+        </tr>
+        <tr>
+            <td>Ghost</td>
+            <td>500</td>
+            <td>105/87</td>
+            <td>30/25</td>
+            <td>25/21</td>
+        </tr>
+        <tr>
+            <td>Xerife</td>
+            <td>800</td>
+            <td>159/145</td>
+            <td>55/50</td>
+            <td>46/42</td>
+        </tr>
+    </table>
+    <hr><br>
+
+    <a href="shotguns.html">
+        <p><strong>Espingandas:</strong> Bucky, Judge.</p><br>
+        <img class="pgarsenal" src="images/shotguns.png" alt="Espingandas" onmouseover="this.src='images/3shotguns.jpeg'" onmouseout="this.src='images/shotguns.png'" /></a>
+    <table border="0px" cellspacing="15" ID="alter">
+        <tr class="dif">
+            <td>Arma</td>
+            <td>Custo</td>
+            <td>Dano Cabeça</td>
+            <td>Dano Corpo</td>
+            <td>Dano Pernas</td>
+        </tr>
+        <td>Bucky</td>
+        <td>900</td>
+        <td>40/26/18</td>
+        <td>20/13/9</td>
+        <td>17/11/7</td>
+        </tr>
+        <tr>
+            <td>Judge</td>
+            <td>1.600</td>
+            <td>34/26/20</td>
+            <td>17/13/10</td>
+            <td>14/11/8</td>
+        </tr>
+    </table>
+    <hr><br>
+
+    <a href="smgs.html">
+        <p><strong>Metralhadoras:</strong> Stinger, Spectre.</p><br>
+        <img class="pgarsenal" src="images/smgs.png" alt="Metralhadoras" onmouseover="this.src='images/4smgs.jpeg'" onmouseout="this.src='images/smgs.png'" /></a>
+    <table border="0px" cellspacing="15" ID="alter">
+        <tr class="dif">
+            <td>Arma</td>
+            <td>Custo</td>
+            <td>Dano Cabeça</td>
+            <td>Dano Corpo</td>
+            <td>Dano Pernas</td>
+        </tr>
+        <td>Stinger</td>
+        <td>1.100</td>
+        <td>67/62</td>
+        <td>27/25</td>
+        <td>22/21</td>
+        </tr>
+        <tr>
+            <td>Spectre</td>
+            <td>1.600</td>
+            <td>78/66</td>
+            <td>26/22</td>
+            <td>22/18</td>
+        </tr>
+    </table>
+    <hr><br>
+
+    <a href="rifles.html">
+        <p><strong>Rifles:</strong> Bulldog, Guardian, Phantom, Vandal.</p><br>
+        <img class="pgarsenal" src="images/rifles.png" alt="Rifles" onmouseover="this.src='images/5rifles.jpeg'" onmouseout="this.src='images/rifles.png'" /></a>
+    <table border="0px" cellspacing="15" ID="alter">
+        <tr class="dif">
+            <td>Arma</td>
+            <td>Custo</td>
+            <td>Dano Cabeça</td>
+            <td>Dano Corpo</td>
+            <td>Dano Pernas</td>
+        </tr>
+        <td>Guardian</td>
+        <td>2.400</td>
+        <td>195</td>
+        <td>65</td>
+        <td>48</td>
+        </tr>
+        <tr>
+            <td>Phantom</td>
+            <td>2.900</td>
+            <td>156/140/124</td>
+            <td>39/35/31</td>
+            <td>39/35/31</td>
+        </tr>
+        <tr>
+            <td>Vandal</td>
+            <td>2.900</td>
+            <td>160</td>
+            <td>40</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td>Bulldog</td>
+            <td>2.100</td>
+            <td>115</td>
+            <td>35</td>
+            <td>29</td>
+        </tr>
+    </table>
+    <hr><br>
+
+    <a href="snipers.html">
+        <p><strong>Rifle de Precisão:</strong> Marshal, Operator.</p><br>
+        <img class="pgarsenal" src="images/snipers.png" alt="Snipers" onmouseover="this.src='images/6snipers.jpeg'" onmouseout="this.src='images/snipers.png'" /></a>
+    <table border="0px" cellspacing="15" ID="alter">
+        <tr class="dif">
+            <td>Arma</td>
+            <td>Custo</td>
+            <td>Dano Cabeça</td>
+            <td>Dano Corpo</td>
+            <td>Dano Pernas</td>
+        </tr>
+        <tr>
+            <td>Marshal</td>
+            <td>1,000</td>
+            <td>202</td>
+            <td>101</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>Operator</td>
+            <td>5,000</td>
+            <td>255</td>
+            <td>150</td>
+            <td>120</td>
+        </tr>
+    </table>
+    <hr><br>
+
+    <a href="heavies.html">
+        <p><strong>Armas Pesadas:</strong> Ares, Odin.</p><br>
+        <img class="pgarsenal" height="100%" width="100%" src="images/heavies.png" ; alt="Armas" onmouseover="this.src='images/7reavies.jpeg'" onmouseout="this.src='images/heavies.png'" /></a>
+    <table border="0px" cellspacing="15" ID="alter">
+        <tr class="dif">
+            <td>Arma</td>
+            <td>Custo</td>
+            <td>Dano Cabeça</td>
+            <td>Dano Corpo</td>
+            <td>Dano Pernas</td>
+        </tr>
+        <td>Ares</td>
+        <td>1.600</td>
+        <td>72/67</td>
+        <td>30/28</td>
+        <td>25/23</td>
+        </tr>
+        <tr>
+            <td>Odin</td>
+            <td>3.200</td>
+            <td>95/77</td>
+            <td>38/31</td>
+            <td>32/26</td>
+        </tr>
+    </table>
+    <hr><br>
+</body>
+<!--Incluindo as imagens com link no rodapé-->
+<footer>
+    <a href="//www.twitter.com/radiant_rv"><img height="3%" width="3%" src="images/twitter.png" class="twitter"></a>
+    <a href="//www.instagram.com/radiant.rev"><img height="3%" width="3%" src="images/instagram.png" class="instagram"></a><br><br>
+</footer>
+<!--Fim do código-->
+
+</html>
