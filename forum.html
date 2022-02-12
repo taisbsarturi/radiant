@@ -1,0 +1,173 @@
+<!--Definindo o tipo do documento como html-->
+<!DOCTYPE html>
+<!--Definindo o idioma para português do Brasil-->
+<html lang="pt-br">
+
+<head>
+    <!--Definindo o alfabeto utilizado, para não ter problemas com acentos-->
+    <meta charset="utf-8">
+    <!--Definindo a área que a página vai ocupar no dispositivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--O nome que irá aparecer na aba da página-->
+    <title>Radiant - Fórum</title>
+    <!--Incluindo os links de acesso ao css, javascript e fontes utilizadas-->
+    <script src="radiant.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@470;337&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+</head>
+<html>
+<header><br>
+    <!--Incluindo o nome e logo do site-->
+    <a href="home.html">
+        <h1>Radiant</h1>
+    </a>
+    <img height="2%" width="2%" src="images/Logo.png" alt="Radiant logo">
+</header>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <!--Criando o menu com links para cada página-->
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="agentes.html">AGENTES</a></li>
+            <li><a href="mapas.html">MAPAS</a></li>
+            <li><a href="arsenal.html">ARSENAL</a></li>
+            <li><a href="noticias.html">NOTÍCIAS</a></li>
+            <li><a href="forum.html">FÓRUM</a></li>
+            <li><a href="revista.html">REVISTA</a></li>
+        </ul>
+    </nav>
+    <br><br>
+    <hr><br>
+    <!--Colocando títulos, com links, textos e um formulário.
+    O texto está com função para mudar quando passar o mouse sobre.-->
+    <h1>Boas-vindas ao fórum da Radiant!</h1><br><br>
+    <h3>REGRAS DO FÓRUM:</h3><br>
+    <p>Não seja um sem noção: Pra gente garantir a comunidade de gamers mais legal do mundo - seja dentro ou fora do jogo - precisamos ser bacanas com quem não conhecemos. Apagaremos mensagens que ultrapassem os limites do bom senso - e quem persistir nesse
+        comportamento terá sua conta banida. Pra sempre. Mesmo. Temos gente de várias idades a partir dos 12 anos jogando aqui. Sabemos que nossa comunidade tende a ser mais madura, e é por isso mesmo que contamos com sua maturidade para saber que certos
+        conteúdos não são seguros pra galera mais nova - e que atitudes infantis não são bem-vindas. Violações às regras serão tratadas com seriedade e severidade - portanto, lembre-se: infrações poderão custar sua conta por aqui. Tenha bom senso e seja
+        gentil - sempre.</p>
+    <p>Nada de Spam: Você odeia receber mensagenos indesejadas? A gente também. E quando elas são repetidas? Pior ainda, né… E quando elas são repetidas? Peraí, já perguntamos isso. E quando elas são repetidas? Por que você está fazendo isso, Riot? E quando
+        elas são repetidas? CHEGA!</p>
+    <p>Não promova contas, sorteios, produtos e serviços: Você tem um produto ou serviço que quer anunciar? Existem outros lugares que não o Fórum do Radiant pra isso. Pior ainda se for algo como venda, troca, empréstimo ou doação de contas ou serviços que
+        violem nossos Termos & Condições - isto pode custar sua conta do Fórum e do jogo. Fazer ou divulgar sorteios de RP, Skins ou qualquer outro produto não é permitido aqui por questões de segurança. Não queremos que ninguém seja enganado e não temos
+        como controlar se o sorteio será real ou não.</p><br>
+    <hr><br>
+    <a href="https://forums.comunidades.riotgames.com/t5/VAL-Novos-Jogadores/bd-p/novos-val">
+        <div onmouseover="njOver(this)" onmouseout="njOut(this)">Novos Jogadores</div>
+    </a>
+    <p>Começou a jogar há pouco tempo? Aprender nunca é demais - troque uma ideia com o pessoal!</p><br><br>
+
+    <a href="https://forums.comunidades.riotgames.com/t5/VAL-Guias/bd-p/guias-valorant">
+        <div onmouseover="guOver(this)" onmouseout="guOut(this)">Guias</div>
+    </a>
+    <p>Compartilhe ou encontre os Guias da comunidade.</p><br><br>
+
+    <a href="https://forums.comunidades.riotgames.com/t5/VAL-Preciso-de-Ajuda/bd-p/ajuda-val">
+        <div onmouseover="ajOver(this)" onmouseout="ajOut(this)">Preciso de Ajuda</div>
+    </a>
+    <p>Pintou um problema? É aqui que a comunidade se ajuda.</p><br><br>
+
+    <a href="https://forums.comunidades.riotgames.com/t5/VAL-Arte-M%C3%BAsica-Hist%C3%B3ria/bd-p/arte-valorant">
+        <div onmouseover="arOver(this)" onmouseout="arOut(this)">Arte, Música & História</div>
+    </a>
+    <p>Discussões sobre os agentes, skins, mapas, dublagem, localização etc.</p><br><br>
+
+    <a href="https://forums.comunidades.riotgames.com/t5/VAL-Cria%C3%A7%C3%B5es-de-F%C3%A3s-V%C3%ADdeos/bd-p/fas-val">
+        <div onmouseover="crOver(this)" onmouseout="crOut(this)">Crianções de Fãs, Vídeos & Streams</div>
+    </a>
+    <p>Ilustrações, músicas, vídeos - venha ver como nossa comunidade é criativa!</p><br><br>
+
+    <a href="https://forums.comunidades.riotgames.com/t5/VAL-Recrutamento/bd-p/recrutamento-valorant">
+        <div onmouseover="reOver(this)" onmouseout="reOut(this)">Recrutamento</div>
+    </a>
+    <p>Encontre pessoas e torneios para jogar. Convide para Discord, grupo de Whatsapp etc.</p><br><br>
+
+    <a href="https://forums.comunidades.riotgames.com/t5/VAL-Discuss%C3%A3o-Geral/bd-p/discussaogeral-VALORANT">
+        <div onmouseover="diOver(this)" onmouseout="diOut(this)">Discussão Geral</div>
+    </a>
+    <p>Conversas gerais sobre Valorant.</p><br>
+    <hr><br>
+
+    <form method="GET" name=formulario id="formulario">
+        <h1>// FORMULÁRIO</h1><br><br>
+        <h3><label for="user">Username do Valorant:</label></h3>
+        <p><input type="text" pattern="[a-z0-9._%+-]+#[0-9]{4}" id="user" name="user" placeholder="username#9999">
+            <span class="validity"></span> O nome de usuário deve conter entre 3 e 10 caracteres, sendo letras minúsculas, números ou caracteres especiais. Após, inclua a # e seus quatro números.
+        </p><br>
+
+        <h3><label for="email">E-mail:</label></h3>
+        <p><input type="email" pattern="[a-z0-9._%+-]+@[a-z]{3,8}.[a-z]{2, 4}$" id="email" name="email" maxlenght="50" autocomplete="off" placeholder="e_m4il@email.com">
+            <span class="validity"></span> O e-mail deve conter no máximo 50 caracteres minúsculos.
+        </p><br>
+
+        <h3><label for="discord">Username do Discord:</label></h3>
+        <p><input type="text" pattern="[a-z]{4,10}" id="discord" name="discord" placeholder="username">
+            <span class="validity"></span> O nome de usuário deve estar em letras minúsculas e ter de 4 a 10 caracteres.
+        </p><br>
+
+        <h3><label for="elo">Elo Atual:</label></h3>
+        <p><input type="text" pattern="[a-z\s] \[0-9]\ +$" id="elo" name="elo" placeholder="Prata 3">
+            <span class="validity"></span> O elo pode conter letras e números.
+        </p><br>
+
+        <h3><label for="turno">Turno que costuma jogar:</label><br></h3>
+        <p><input type="radio" name="turno" value="M">
+            <label for="M">Manhã</label>
+            <input type="radio" name="turno" value="T">
+            <label for="T">Tarde</label>
+            <input type="radio" name="turno" value="N">
+            <label for="N">Noite</label>
+        </p><br>
+
+        <h3><label for="twitch">Canal na Twitch:</label></h3>
+        <p><input type="text" pattern="[a-z\s] \[0-9]" id="twitch" name="twitch"></p><br>
+
+        <h3><label for="assunto">Assunto:</label></h3>
+        <p><input type="text" pattern="[a-z\s] \[0-9]\ +$" id="assunto" name="assunto"></p><br>
+
+        <h3><label for="mensagem">Mensagem:</label></h3>
+        <p><input type="text" pattern="[a-z\s] \[0-9]\ +$" id="mensagem" name="mensagem"></p><br>
+
+        <h3><label for="senha">Senha:</label><br></h3>
+        <p><input type="password" name="senha"></p><br>
+
+        <h3><label for="rsenha">Repita a senha:</label><br></h3>
+        <p><input type="password" name="rsenha"></p><br>
+
+        <p><input type="checkbox" name="maior_idade" value="maior">
+            <label for="maior">Declaro ser maior que 14 anos.</label>
+        </p><br>
+
+        <h3><label for="num">Digite um número entre 1 e 10</label><br></h3>
+        <p><input type="number" name="num"></p><br>
+
+        <input type="reset" value="Limpar Dados">
+        <input type="submit" value="Enviar" onclick="return validaForm()"><br><br>
+    </form><br>
+</body>
+<p>Saiu de um portal mágico do Bind e não sabe em que ano está? Calma, é só clicar no botão abaixo:</p>
+<button id="myBtn">Desvendar Mistério</button>
+<p id="demo"></p>
+
+<script>
+    //Adicionando o evento quando clicar no botão
+    document.getElementById("myBtn").onclick = mostrarData;
+
+    function mostrarData() {
+        document.getElementById("demo").innerHTML = Date();
+    }
+</script><br><br>
+<hr><br><br>
+
+<!--Incluindo as imagens com link no rodapé-->
+<footer>
+    <a href="//www.twitter.com/radiant_rv"><img height="3%" width="3%" src="images/twitter.png" class="twitter"></a>
+    <a href="//www.instagram.com/radiant.rev"><img height="3%" width="3%" src="images/instagram.png" class="instagram"></a><br><br>
+</footer>
+<!--Fim do código-->
+
+</html>

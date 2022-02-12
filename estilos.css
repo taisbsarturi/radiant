@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*formatando os títulos maiores, como o nome do site (Radiant) e outros títulos em diversas páginas*/
+
+h1 {
+    color: #666666;
+    /*cor do título*/
+    font-family: 'Cairo', sans-serif;
+    /*fonte do título*/
+    text-align: justify;
+    /*deixando otítulo justificado*/
+    font-size: 22px;
+    /*tamanho da fonte do título*/
+}
+
+
+/*formatando os títulos contidos em diversas páginas, como na página FÓRUM*/
+
+h2 {
+    color: #ff4654;
+    /*cor do texto*/
+    font-size: 17px;
+    /*tamanho da fonte do título*/
+    font-family: 'Cairo', sans-serif;
+    /*fonte do título*/
+}
+
+
+/*formatando os links, contidos em diversas páginas, como na página AGENTES*/
+
+a {
+    color: #ff4654;
+    /*cor do texto*/
+    font-size: 20px;
+    /*tamanho da fonte do título*/
+    font-family: 'Open Sans', sans-serif;
+    /*fonte do título*/
+    text-decoration: none;
+    /*para tirar o sublinhado do link*/
+}
+
+
+/*formatando os títulos contidos em diversas páginas, como na página FÓRUM*/
+
+h3 {
+    color: #293045;
+    /*cor do texto*/
+    font-size: 13.5px;
+    /*tamanho da fonte do título*/
+    font-family: 'Open Sans', sans-serif;
+    /*fonte do título*/
+}
+
+
+/*formatando os parágrafos contidos em toda a página*/
+
+p {
+    color: #666666;
+    /*cor do texto*/
+    font-size: 14px;
+    /*tamanho da fonte do título*/
+    text-align: justify;
+    /*para deixar o parágrafo jusificado*/
+    font-family: 'Cairo', sans-serif;
+    /*fonte do título*/
+    width: 100%;
+    /*para que o parágrafo ocupe 100% da área da página*/
+    text-indent: 2em;
+    /*recuo na primeira linha*/
+}
+
+
+/*formatando os parágrafos contidos em toda a página,
+quando selecionados usando o mouse, clicando, segurando e arrastando pelo texto*/
+
+p::selection {
+    color: #ffffff;
+    /*cor do parágrafo selecionado*/
+    background-color: #ff4654;
+    /*cor do fundo no parágrafo selecionado*/
+}
+
+
+/*formatando os títulos maiores contidos em toda a página,
+quando selecionados usando o mouse, clicando, segurando e arrastando pelo título*/
+
+h1::selection {
+    color: #ffffff;
+    /*cor do texto selecionado*/
+    background-color: #ff4654;
+    /*cor do fundo no texto selecionado*/
+}
+
+
+/*formatando os títulos contidos em toda a página,
+quando selecionados usando o mouse, clicando, segurando e arrastando pelo título*/
+
+h2::selection {
+    color: #ffffff;
+    /*cor do texto selecionado*/
+    background-color: #ff4654;
+    /*cor do fundo no texto selecionado*/
+}
+
+
+/*formatando os títulos menores contidos em toda a página,
+quando selecionados usando o mouse, clicando, segurando e arrastando pelo título*/
+
+h3::selection {
+    color: #ffffff;
+    /*cor do texto selecionado*/
+    background-color: #ff4654;
+    /*cor do fundo no texto selecionado*/
+}
+
+
+/*formatando os imagens contidas em toda a página,
+quando selecionadas usando o mouse, clicando, segurando e arrastando pela imagem*/
+
+img::selection {
+    color: #ffffff;
+    /*cor do texto*/
+    background-color: #666666;
+    /*cor do fundo no texto selecionado*/
+}
+
+
+/*formatando o nome da página, onde tem o nome escrito em h1 e uma imagem ao lado*/
+
+img,
+h1 {
+    display: inline-block;
+    /*criar um bloco de elementos na página HOME, um ao lado do outro*/
+}
+
+
+/*formatando o corpo de todas as páginas*/
+
+body {
+    background-image: url("images/centerbg.png"), url("images/bottombg.png"), url("images/centerbg.png");
+    /*incluindo três imagens para o fundo das páginas*/
+    background-repeat: no-repeat;
+    /*as imagens não irão se repetir*/
+    background-size: 85%;
+    /*imagens terão um tamanho reduzindo comparado com o original*/
+    background-position-x: center;
+    /*imagens ficarão centralizadas, do ponto de vista horizontal*/
+    background-position-y: top, bottom, center;
+    /*do ponto de vista vertical, uma ficará no topo, outra na parte de baixo e outra no centro*/
+    background-color: #ECE7E1;
+    /*cor do fundo das páginas*/
+    width: 60%;
+    /*tamanho disponível no corpo, do ponto de vista horizontal*/
+    margin: 0 auto;
+    /*a margem vertical será zero e a horizontal será automática*/
+    min-width: 600px;
+    /*mínimo da tela na horizontal*/
+    max-width: 2000px;
+    /*máximo da tela na horizontal*/
+    font-family: 'Open Sans', sans-serif;
+    /*fonte do texto no corpo*/
+    font-size: 12px;
+    /*tamanho do texto no corpo*/
+    text-align: justify;
+    /*texto no corpo será justificado*/
+}
+
+
+/*formatando a navegação, onde está o menu contido em todas as páginas*/
+
+nav {
+    display: flex;
+    /*display flexível dependendo do formato da tela no menu*/
+    justify-content: space-evenly;
+    /*deixando o espaço igual entre os itens no menu*/
+    align-items: center;
+    /*alinhamento centralizado dos itens no menu*/
+    font-family: 'Open Sans', sans-serif;
+    /*fonte do texto no menu*/
+}
+
+
+/*formatando o menu contido em todas as páginas*/
+
+.menu {
+    list-style: none;
+    /*nenhum estilo de lista*/
+    border: none;
+    /*menu sem borda*/
+}
+
+
+/*formatando o menu contido em todas as páginas*/
+
+.menu li {
+    position: relative;
+    /*menu vai ficar um item ao lado do outro, se ajustando conforme é incluído mais itens*/
+    float: left;
+    /*menu vai ficar na horizontal*/
+    border-right: 1px solid #c0c0c0;
+    /*uma borda no menu, com o tamanho e cor*/
+}
+
+
+/*formatando o menu contido em todas as páginas*/
+
+.menu li a {
+    color: #ECE7E1;
+    /*cor da letra do menu*/
+    background: #333;
+    /*cor do fundo do menu*/
+    font-family: 'Open Sans', sans-serif;
+    /*fonte do menu*/
+    font-size: 14px;
+    /*tamanho da fonte do menu*/
+    text-decoration: none;
+    /*link sem o sublinhado*/
+    padding: 5px 10px;
+    /*espaço interno do menu*/
+    display: block;
+    /*ficará como um bloco*/
+}
+
+
+/*formatando o menu quando passa o mouse, contido em todas as páginas*/
+
+.menu li a:hover {
+    background: #000000;
+    /*fundo preto do menu quando coloca o mouse*/
+    color: #FFF;
+    /*cor da letra do menu quando coloca o mouse*/
+    -moz-box-shadow: 0 3px 10px 0 #666666;
+    /*efeito na caixa do menu quando passa o mouse*/
+    -webkit-box-shadow: 0 3px 10px 0 #ccc;
+    /*efeito na caixa do meunu quando passa o mouse*/
+    text-shadow: 0px 0px 5px #fff;
+    /*efeito no texto do meunu quando passa o mouse*/
+    border: #666666;
+    /*borda do meunu quando passa o mouse*/
+    border-style: inherit;
+    /*vai pegar a mesma formatação de quando não passa o mouse sobre*/
+}
+
+
+/*formatando as tabelas contidas na página ARSENAL*/
+
+table#alter tr td {
+    color: #ff4654;
+    /*cor dos itens da tabela*/
+    text-align: center;
+    /*disposição centralizada do texto dos itens da tabela*/
+}
+
+
+/*formatando as tabelas contidas na página ARSENAL*/
+
+table#alter tr.dif td {
+    color: #666666;
+    /*cor do cabeçario da tabela*/
+}
+
+
+/*formatando os áudios contidos na página de cada agente*/
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+    background-color: #ccc;
+    /*cor do botão de áudio*/
+}
+
+
+/*formatando as imagens com link da página ARSENAL*/
+
+.pgarsenal {
+    width: 100%;
+    /*tamanho da imagem na horizontal*/
+    height: 100%;
+    /*tamanho da imagem na vertical*/
+    overflow: hidden;
+    /*cortar o conteudo que ultrapassa o limite*/
+    display: inline-block;
+    /*deixar os elementos em blocos na linha*/
+}
+
+
+/*formatando o destaque dado às imagens contidas na HOME referente aos agentes*/
+
+.img-destaqueag {
+    width: 16%;
+    /*tamanho da imagem na horizontal*/
+    height: 16%;
+    /*tamanho da imagem na vertical*/
+    overflow: hidden;
+    /*cortar o conteudo que ultrapassa o limite*/
+    display: inline-block;
+    /*deixar os elementos em blocos na linha*/
+}
+
+
+/*formatando o destaque dado às imagens contidas na HOME referente aos agentes quando se passa o mouse sobre*/
+
+.img-destaqueag img {
+    width: 100%;
+    /*tamanho da imagem na horizontal*/
+    height: 100%;
+    /*tamanho da imagem na vertical*/
+    -webkit-transition: -webkit-transform .5s ease;
+    /*transição do destaque*/
+    transition: transform .5s ease;
+    /*tempo de alteração do destaque*/
+}
+
+
+/*formatando o destaque dado às imagens contidas na HOME referente aos agentes quando se passa o mouse sobre*/
+
+.img-destaqueag:hover img {
+    -webkit-transform: scale(1.1);
+    /*criando o destaque*/
+    transform: scale(1.1);
+    /*criando o destaque*/
+}
+
+
+/*formatando o destaque dado às imagens contidas na HOME referente aos mapas*/
+
+.img-destaquemp {
+    width: 24.4%;
+    /*tamanho da imagem na horizontal*/
+    height: 24.4%;
+    /*tamanho da imagem na vertical*/
+    overflow: hidden;
+    /*cortar o conteudo que ultrapassa o limite*/
+    display: inline-block;
+    /*deixar os elementos em blocos na linha*/
+}
+
+
+/*formatando o destaque dado às imagens contidas na HOME referente aos mapas quando se passa o mouse sobre*/
+
+.img-destaquemp img {
+    width: 100%;
+    /*tamanho da imagem na horizontal*/
+    height: 100%;
+    /*tamanho da imagem na vertical*/
+    -webkit-transition: -webkit-transform .5s ease;
+    /*transição do destaque*/
+    transition: transform .5s ease;
+    /*tempo de alteração do destaque*/
+}
+
+
+/*formatando o destaque dado às imagens contidas na HOME referente aos mapas quando se passa o mouse sobre*/
+
+.img-destaquemp:hover img {
+    -webkit-transform: scale(1.1);
+    /*criando o destaque*/
+    transform: scale(1.1);
+    /*criando o destaque*/
+}
+
+
+/*formatando o destaque dado às imagens contidas na HOME referente ao arsenal*/
+
+.img-destaquear {
+    width: 32.8%;
+    /*tamanho da imagem na horizontal*/
+    height: 32.8%;
+    /*tamanho da imagem na vertical*/
+    overflow: hidden;
+    /*cortar o conteudo que ultrapassa o limite*/
+    display: inline-block;
+    /*deixar os elementos em blocos na linha*/
+}
+
+
+/*formatando o destaque dado às imagens contidas na HOME referente ao arsenal quando se passa o mouse sobre*/
+
+.img-destaquear img {
+    width: 100%;
+    /*tamanho da imagem na horizontal*/
+    height: 100%;
+    /*tamanho da imagem na vertical*/
+    -webkit-transition: -webkit-transform .5s ease;
+    /*transição do destaque*/
+    transition: transform .5s ease;
+    /*tempo de alteração do destaque*/
+}
+
+
+/*formatando o destaque dado às imagens contidas na HOME referente ao arsenal quando se passa o mouse sobre*/
+
+.img-destaquear:hover img {
+    -webkit-transform: scale(1.1);
+    /*criando o destaque*/
+    transform: scale(1.1);
+    /*criando o destaque*/
+}
+
+
+/*formatando a imagem da página HOME referente às notícias, para dar destaque ao passar o mouse*/
+
+.img-destaquent {
+    width: 24.3%;
+    /*tamanho da imagem na horizontal*/
+    height: 24.3%;
+    /*tamanho da imagem na vertical*/
+    overflow: hidden;
+    /*cortar o conteudo que ultrapassa o limite*/
+    display: inline-block;
+    /*deixar os elementos em blocos na linha*/
+}
+
+
+/*formatando a imagem da página HOME referente às notícias, para dar destaque ao passar o mouse*/
+
+.img-destaquent img {
+    width: 100%;
+    /*tamanho da imagem na horizontal*/
+    height: 100%;
+    /*tamanho da imagem na vertical*/
+    -webkit-transition: -webkit-transform .5s ease;
+    /*transição do destaque*/
+    transition: transform .5s ease;
+    /*tempo de alteração do destaque*/
+}
+
+
+/*formatando a imagem da página HOME referente às notícias, para dar destaque ao passar o mouse*/
+
+.img-destaquent:hover img {
+    -webkit-transform: scale(1.1);
+    /*criando o destaque*/
+}
+
+
+/*formatando as duas imagens com links do rodapé, contido em todas as páginas*/
+
+footer {
+    text-align: center;
+    /*o rodapé ficará centralizado*/
+}
+
+
+/*formatando o formulário da página FÓRUM*/
+
+#formulario {
+    width: 100%;
+    /*tamanho do formulário para o lado*/
+    height: 100%;
+    /*tamanho do formulário para baixo*/
+    background: #dbd8d3;
+    /*fundo do formulário, cor*/
+    padding: 5px;
+    /*espaço interno do formulário*/
+    border-collapse: collapse;
+    /*borda individual*/
+    color: #293045;
+    /*cor da fonte do formulário*/
+    font-size: 12px;
+    /*tamanho da fonte do formulário*/
+    font-family: 'Open Sans', sans-serif;
+    /*fonte do formulário*/
+}
