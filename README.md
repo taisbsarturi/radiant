@@ -1,1 +1,1 @@
-# taisbsarturi.github.io/radiant/
+# taisbsarturi.github.io/radiant/home
