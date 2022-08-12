@@ -4,6 +4,8 @@ Para acessar o site: taisbsarturi.github.io/radiant/home
 
 ![Capturar](https://user-images.githubusercontent.com/99523790/184372820-dc86dfee-2509-4276-b707-d6829c95a981.PNG)
 
+# Seções
+
 O site é composto por sete seções:
 
 *Home:* Conta com um menu e quadro blocos (agentes, mapas, arsenal e notícias);
@@ -19,3 +21,14 @@ O site é composto por sete seções:
 *Fórum:* Conta com as regras do fórum, links para tópicos específicos e ao fim um formulário.
 
 *Revista:* Conta com um arquivo em PDF da revista.
+
+
+# Tecnologias Utilizadas
+
+Para o desenvolvimento deste site utilizei as seguintes tecnologias:
+
+*HTML*;
+
+*CSS*;
+
+*JavaScript*.
